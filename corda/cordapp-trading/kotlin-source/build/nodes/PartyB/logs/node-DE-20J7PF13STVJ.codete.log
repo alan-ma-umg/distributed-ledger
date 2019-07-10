@@ -1,0 +1,655 @@
+[INFO ] 2019-07-10T10:46:58,930Z [main] manifests.Manifests.info - 111 attributes loaded from 124 stream(s) in 4s, 111 saved, 1970 ignored: ["ActiveMQ-Version", "Agent-Class", "Ant-Version", "Application-Class", "Application-Library-Allowable-Codebase", "Application-Name", "Application-Version", "Archiver-Version", "Automatic-Module-Name", "Bnd-LastModified", "Branch", "Build-Date", "Build-Host", "Build-Id", "Build-Java-Version", "Build-Jdk", "Build-Job", "Build-Number", "Build-Timestamp", "Built-By", "Built-OS", "Built-Status", "Bundle-Activator", "Bundle-Category", "Bundle-ClassPath", "Bundle-Copyright", "Bundle-Description", "Bundle-DocURL", "Bundle-License", "Bundle-ManifestVersion", "Bundle-Name", "Bundle-RequiredExecutionEnvironment", "Bundle-SymbolicName", "Bundle-Vendor", "Bundle-Version", "Caller-Allowable-Codebase", "Can-Redefine-Classes", "Can-Retransform-Classes", "Can-Set-Native-Method-Prefix", "Caplets", "Change", "Codebase", "Corda-Platform-Version", "Corda-Release-Version", "Corda-Revision", "Corda-Vendor", "Created-By", "DynamicImport-Package", "Eclipse-BuddyPolicy", "Eclipse-LazyStart", "Export-Package", "Extension-Name", "Fragment-Host", "Gradle-Version", "Ignore-Package", "Implementation-Build", "Implementation-Build-Date", "Implementation-Title", "Implementation-URL", "Implementation-Url", "Implementation-Vendor", "Implementation-Vendor-Id", "Implementation-Version", "Import-Package", "Include-Resource", "JCabi-Build", "JCabi-Date", "JCabi-Version", "JVM-Args", "Java-Agents", "Java-Vendor", "Java-Version", "Kotlin-Runtime-Component", "Kotlin-Version", "Log4jReleaseKey", "Log4jReleaseManager", "Log4jReleaseVersion", "Main-Class", "Main-class", "Manifest-Version", "Min-Java-Version", "Min-Update-Version", "Module-Email", "Module-Origin", "Module-Owner", "Module-Source", "Multi-Release", "Originally-Created-By", "Os-Arch", "Os-Name", "Os-Version", "Package", "Permissions", "Premain-Class", "Private-Package", "Provide-Capability", "Require-Capability", "SCM-Revision", "SCM-url", "Scm-Connection", "Scm-Revision", "Scm-Url", "Service-Component", "Specification-Title", "Specification-Vendor", "Specification-Version", "System-Properties", "Tool", "Trusted-Library", "X-Compile-Source-JDK", "X-Compile-Target-JDK"] {}
+[INFO ] 2019-07-10T10:47:09,303Z [main] BasicInfo.printBasicNodeInfo - Logs can be found in                    : /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/logs {}
+[INFO ] 2019-07-10T10:47:10,547Z [main] config.ConfigHelper.loadConfig - Config:
+{
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 20
+    "activeMQServer" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 21
+        "bridge" : {
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 24
+            "maxRetryIntervalMin" : 3,
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 22
+            "retryIntervalMs" : 5000,
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 23
+            "retryIntervalMultiplier" : 1.5
+        }
+    },
+    # hardcoded value
+    "baseDirectory" : "/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB",
+    # merge of reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 6,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-3.1-corda.jar!/reference.conf: 6
+    "dataSourceProperties" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 10
+        "dataSource.password" : "",
+        # merge of reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 8,hardcoded value,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 8,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 17
+        "dataSource.url" : "jdbc:h2:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/persistence;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=10000;WRITE_DELAY=100;AUTO_SERVER_PORT=0",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 9
+        "dataSource.user" : "sa",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 7
+        "dataSourceClassName" : "org.h2.jdbcx.JdbcDataSource"
+    },
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 12
+    "database" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 14
+        "exportHibernateJMXStatistics" : "false",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 13
+        "transactionIsolationLevel" : "REPEATABLE_READ"
+    },
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 16
+    "devMode" : true,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 2
+    "emailAddress" : "admin@company.com",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 3
+    "exportJMXto" : "http",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 17
+    "h2port" : 0,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 4
+    "keyStorePassword" : "cordacadevpass",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 1
+    "myLegalName" : "O=PartyB,L=New York,C=US",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 2
+    "p2pAddress" : "localhost:10010",
+    # merge of /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 3,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 27
+    "rpcSettings" : {
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 4
+        "address" : "localhost:10011",
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 5
+        "adminAddress" : "localhost:10051",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 29
+        "standAloneBroker" : false,
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 28
+        "useSsl" : false
+    },
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 7
+    "rpcUsers" : [
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 8
+        {
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 9
+            "password" : "test",
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 10
+            "permissions" : [
+                # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 11
+                "ALL"
+            ],
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 13
+            "user" : "user1"
+        }
+    ],
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 5
+    "trustStorePassword" : "trustpass",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 18
+    "useTestClock" : false,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 19
+    "verifierType" : "InMemory",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 16
+    "webAddress" : "localhost:10012"
+}
+ {}
+[WARN ] 2019-07-10T10:47:18,627Z [main] internal.config.defaultToOldPath - Config key user has been deprecated and will be removed in a future release. Use username instead {}
+[INFO ] 2019-07-10T10:47:19,212Z [main] internal.Node.logStartupInfo - Vendor: Corda Open Source {}
+[INFO ] 2019-07-10T10:47:19,212Z [main] internal.Node.logStartupInfo - Release: 3.1-corda {}
+[INFO ] 2019-07-10T10:47:19,212Z [main] internal.Node.logStartupInfo - Platform Version: 3 {}
+[INFO ] 2019-07-10T10:47:19,213Z [main] internal.Node.logStartupInfo - Revision: d193dd85e0908aba9b245e40297f4b2073555905 {}
+[INFO ] 2019-07-10T10:47:19,217Z [main] internal.Node.logStartupInfo - PID: 72291 {}
+[INFO ] 2019-07-10T10:47:19,217Z [main] internal.Node.logStartupInfo - Main class: /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-3.1-corda.jar {}
+[INFO ] 2019-07-10T10:47:19,218Z [main] internal.Node.logStartupInfo - CommandLine Args: -Xmx200m -XX:+UseG1GC -javaagent:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/quasar-core-0.7.9-jdk8.jar=x(antlr**;bftsmart**;ch**;co.paralleluniverse**;com.codahale**;com.esotericsoftware**;com.fasterxml**;com.google**;com.ibm**;com.intellij**;com.jcabi**;com.nhaarman**;com.opengamma**;com.typesafe**;com.zaxxer**;de.javakaffee**;groovy**;groovyjarjarantlr**;groovyjarjarasm**;io.atomix**;io.github**;io.netty**;jdk**;joptsimple**;junit**;kotlin**;net.bytebuddy**;net.i2p**;org.apache**;org.assertj**;org.bouncycastle**;org.codehaus**;org.crsh**;org.dom4j**;org.fusesource**;org.h2**;org.hamcrest**;org.hibernate**;org.jboss**;org.jcp**;org.joda**;org.junit**;org.mockito**;org.objectweb**;org.objenesis**;org.slf4j**;org.w3c**;org.xml**;org.yaml**;reflectasm**;rx**;org.jolokia**) -Dvisualvm.display.name=Corda -Djava.library.path=/Users/kprzystalski/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda -Dcapsule.app=net.corda.node.Corda_3.1-corda -Dcapsule.dir=/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda -Dcapsule.jar=/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar {}
+[INFO ] 2019-07-10T10:47:19,219Z [main] internal.Node.logStartupInfo - Application Args: --just-generate-node-info {}
+[ERROR] 2019-07-10T10:47:19,220Z [main] internal.Node.run - Exception during node registration {}
+java.lang.UnsupportedOperationException: Boot class path mechanism is not supported
+	at sun.management.RuntimeImpl.getBootClassPath(RuntimeImpl.java:99) ~[?:?]
+	at net.corda.node.internal.NodeStartup.logStartupInfo(NodeStartup.kt:174) ~[corda-node-3.1-corda.jar:?]
+	at net.corda.node.internal.NodeStartup.run(NodeStartup.kt:106) [corda-node-3.1-corda.jar:?]
+	at net.corda.node.Corda.main(Corda.kt:13) [corda-node-3.1-corda.jar:?]
+[INFO ] 2019-07-10T10:48:24,492Z [main] manifests.Manifests.info - 111 attributes loaded from 124 stream(s) in 4s, 111 saved, 1970 ignored: ["ActiveMQ-Version", "Agent-Class", "Ant-Version", "Application-Class", "Application-Library-Allowable-Codebase", "Application-Name", "Application-Version", "Archiver-Version", "Automatic-Module-Name", "Bnd-LastModified", "Branch", "Build-Date", "Build-Host", "Build-Id", "Build-Java-Version", "Build-Jdk", "Build-Job", "Build-Number", "Build-Timestamp", "Built-By", "Built-OS", "Built-Status", "Bundle-Activator", "Bundle-Category", "Bundle-ClassPath", "Bundle-Copyright", "Bundle-Description", "Bundle-DocURL", "Bundle-License", "Bundle-ManifestVersion", "Bundle-Name", "Bundle-RequiredExecutionEnvironment", "Bundle-SymbolicName", "Bundle-Vendor", "Bundle-Version", "Caller-Allowable-Codebase", "Can-Redefine-Classes", "Can-Retransform-Classes", "Can-Set-Native-Method-Prefix", "Caplets", "Change", "Codebase", "Corda-Platform-Version", "Corda-Release-Version", "Corda-Revision", "Corda-Vendor", "Created-By", "DynamicImport-Package", "Eclipse-BuddyPolicy", "Eclipse-LazyStart", "Export-Package", "Extension-Name", "Fragment-Host", "Gradle-Version", "Ignore-Package", "Implementation-Build", "Implementation-Build-Date", "Implementation-Title", "Implementation-URL", "Implementation-Url", "Implementation-Vendor", "Implementation-Vendor-Id", "Implementation-Version", "Import-Package", "Include-Resource", "JCabi-Build", "JCabi-Date", "JCabi-Version", "JVM-Args", "Java-Agents", "Java-Vendor", "Java-Version", "Kotlin-Runtime-Component", "Kotlin-Version", "Log4jReleaseKey", "Log4jReleaseManager", "Log4jReleaseVersion", "Main-Class", "Main-class", "Manifest-Version", "Min-Java-Version", "Min-Update-Version", "Module-Email", "Module-Origin", "Module-Owner", "Module-Source", "Multi-Release", "Originally-Created-By", "Os-Arch", "Os-Name", "Os-Version", "Package", "Permissions", "Premain-Class", "Private-Package", "Provide-Capability", "Require-Capability", "SCM-Revision", "SCM-url", "Scm-Connection", "Scm-Revision", "Scm-Url", "Service-Component", "Specification-Title", "Specification-Vendor", "Specification-Version", "System-Properties", "Tool", "Trusted-Library", "X-Compile-Source-JDK", "X-Compile-Target-JDK"] {}
+[INFO ] 2019-07-10T10:48:34,571Z [main] BasicInfo.printBasicNodeInfo - Logs can be found in                    : /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/logs {}
+[INFO ] 2019-07-10T10:48:35,843Z [main] config.ConfigHelper.loadConfig - Config:
+{
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 20
+    "activeMQServer" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 21
+        "bridge" : {
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 24
+            "maxRetryIntervalMin" : 3,
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 22
+            "retryIntervalMs" : 5000,
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 23
+            "retryIntervalMultiplier" : 1.5
+        }
+    },
+    # hardcoded value
+    "baseDirectory" : "/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB",
+    # merge of reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 6,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-3.1-corda.jar!/reference.conf: 6
+    "dataSourceProperties" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 10
+        "dataSource.password" : "",
+        # merge of reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 8,hardcoded value,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 8,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 17
+        "dataSource.url" : "jdbc:h2:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/persistence;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=10000;WRITE_DELAY=100;AUTO_SERVER_PORT=0",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 9
+        "dataSource.user" : "sa",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 7
+        "dataSourceClassName" : "org.h2.jdbcx.JdbcDataSource"
+    },
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 12
+    "database" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 14
+        "exportHibernateJMXStatistics" : "false",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 13
+        "transactionIsolationLevel" : "REPEATABLE_READ"
+    },
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 16
+    "devMode" : true,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 2
+    "emailAddress" : "admin@company.com",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 3
+    "exportJMXto" : "http",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 17
+    "h2port" : 0,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 4
+    "keyStorePassword" : "cordacadevpass",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 1
+    "myLegalName" : "O=PartyB,L=New York,C=US",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 2
+    "p2pAddress" : "localhost:10010",
+    # merge of /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 3,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 27
+    "rpcSettings" : {
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 4
+        "address" : "localhost:10011",
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 5
+        "adminAddress" : "localhost:10051",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 29
+        "standAloneBroker" : false,
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 28
+        "useSsl" : false
+    },
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 7
+    "rpcUsers" : [
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 8
+        {
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 9
+            "password" : "test",
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 10
+            "permissions" : [
+                # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 11
+                "ALL"
+            ],
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 13
+            "user" : "user1"
+        }
+    ],
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 5
+    "trustStorePassword" : "trustpass",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 18
+    "useTestClock" : false,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 19
+    "verifierType" : "InMemory",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 16
+    "webAddress" : "localhost:10012"
+}
+ {}
+[WARN ] 2019-07-10T10:48:45,387Z [main] internal.config.defaultToOldPath - Config key user has been deprecated and will be removed in a future release. Use username instead {}
+[INFO ] 2019-07-10T10:48:46,179Z [main] internal.Node.logStartupInfo - Vendor: Corda Open Source {}
+[INFO ] 2019-07-10T10:48:46,179Z [main] internal.Node.logStartupInfo - Release: 3.1-corda {}
+[INFO ] 2019-07-10T10:48:46,180Z [main] internal.Node.logStartupInfo - Platform Version: 3 {}
+[INFO ] 2019-07-10T10:48:46,180Z [main] internal.Node.logStartupInfo - Revision: d193dd85e0908aba9b245e40297f4b2073555905 {}
+[INFO ] 2019-07-10T10:48:46,183Z [main] internal.Node.logStartupInfo - PID: 72314 {}
+[INFO ] 2019-07-10T10:48:46,184Z [main] internal.Node.logStartupInfo - Main class: /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-3.1-corda.jar {}
+[INFO ] 2019-07-10T10:48:46,184Z [main] internal.Node.logStartupInfo - CommandLine Args: -Xmx200m -XX:+UseG1GC -javaagent:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/quasar-core-0.7.9-jdk8.jar=x(antlr**;bftsmart**;ch**;co.paralleluniverse**;com.codahale**;com.esotericsoftware**;com.fasterxml**;com.google**;com.ibm**;com.intellij**;com.jcabi**;com.nhaarman**;com.opengamma**;com.typesafe**;com.zaxxer**;de.javakaffee**;groovy**;groovyjarjarantlr**;groovyjarjarasm**;io.atomix**;io.github**;io.netty**;jdk**;joptsimple**;junit**;kotlin**;net.bytebuddy**;net.i2p**;org.apache**;org.assertj**;org.bouncycastle**;org.codehaus**;org.crsh**;org.dom4j**;org.fusesource**;org.h2**;org.hamcrest**;org.hibernate**;org.jboss**;org.jcp**;org.joda**;org.junit**;org.mockito**;org.objectweb**;org.objenesis**;org.slf4j**;org.w3c**;org.xml**;org.yaml**;reflectasm**;rx**;org.jolokia**) -Dvisualvm.display.name=Corda -Djava.library.path=/Users/kprzystalski/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda -Dcapsule.app=net.corda.node.Corda_3.1-corda -Dcapsule.dir=/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda -Dcapsule.jar=/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar {}
+[INFO ] 2019-07-10T10:48:46,185Z [main] internal.Node.logStartupInfo - Application Args: --just-generate-node-info {}
+[ERROR] 2019-07-10T10:48:46,185Z [main] internal.Node.run - Exception during node registration {}
+java.lang.UnsupportedOperationException: Boot class path mechanism is not supported
+	at sun.management.RuntimeImpl.getBootClassPath(RuntimeImpl.java:99) ~[?:?]
+	at net.corda.node.internal.NodeStartup.logStartupInfo(NodeStartup.kt:174) ~[corda-node-3.1-corda.jar:?]
+	at net.corda.node.internal.NodeStartup.run(NodeStartup.kt:106) [corda-node-3.1-corda.jar:?]
+	at net.corda.node.Corda.main(Corda.kt:13) [corda-node-3.1-corda.jar:?]
+[INFO ] 2019-07-10T10:58:46,340Z [main] manifests.Manifests.info - 111 attributes loaded from 124 stream(s) in 4s, 111 saved, 1970 ignored: ["ActiveMQ-Version", "Agent-Class", "Ant-Version", "Application-Class", "Application-Library-Allowable-Codebase", "Application-Name", "Application-Version", "Archiver-Version", "Automatic-Module-Name", "Bnd-LastModified", "Branch", "Build-Date", "Build-Host", "Build-Id", "Build-Java-Version", "Build-Jdk", "Build-Job", "Build-Number", "Build-Timestamp", "Built-By", "Built-OS", "Built-Status", "Bundle-Activator", "Bundle-Category", "Bundle-ClassPath", "Bundle-Copyright", "Bundle-Description", "Bundle-DocURL", "Bundle-License", "Bundle-ManifestVersion", "Bundle-Name", "Bundle-RequiredExecutionEnvironment", "Bundle-SymbolicName", "Bundle-Vendor", "Bundle-Version", "Caller-Allowable-Codebase", "Can-Redefine-Classes", "Can-Retransform-Classes", "Can-Set-Native-Method-Prefix", "Caplets", "Change", "Codebase", "Corda-Platform-Version", "Corda-Release-Version", "Corda-Revision", "Corda-Vendor", "Created-By", "DynamicImport-Package", "Eclipse-BuddyPolicy", "Eclipse-LazyStart", "Export-Package", "Extension-Name", "Fragment-Host", "Gradle-Version", "Ignore-Package", "Implementation-Build", "Implementation-Build-Date", "Implementation-Title", "Implementation-URL", "Implementation-Url", "Implementation-Vendor", "Implementation-Vendor-Id", "Implementation-Version", "Import-Package", "Include-Resource", "JCabi-Build", "JCabi-Date", "JCabi-Version", "JVM-Args", "Java-Agents", "Java-Vendor", "Java-Version", "Kotlin-Runtime-Component", "Kotlin-Version", "Log4jReleaseKey", "Log4jReleaseManager", "Log4jReleaseVersion", "Main-Class", "Main-class", "Manifest-Version", "Min-Java-Version", "Min-Update-Version", "Module-Email", "Module-Origin", "Module-Owner", "Module-Source", "Multi-Release", "Originally-Created-By", "Os-Arch", "Os-Name", "Os-Version", "Package", "Permissions", "Premain-Class", "Private-Package", "Provide-Capability", "Require-Capability", "SCM-Revision", "SCM-url", "Scm-Connection", "Scm-Revision", "Scm-Url", "Service-Component", "Specification-Title", "Specification-Vendor", "Specification-Version", "System-Properties", "Tool", "Trusted-Library", "X-Compile-Source-JDK", "X-Compile-Target-JDK"] {}
+[INFO ] 2019-07-10T10:58:56,114Z [main] BasicInfo.printBasicNodeInfo - Logs can be found in                    : /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/logs {}
+[INFO ] 2019-07-10T10:58:57,299Z [main] config.ConfigHelper.loadConfig - Config:
+{
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 20
+    "activeMQServer" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 21
+        "bridge" : {
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 24
+            "maxRetryIntervalMin" : 3,
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 22
+            "retryIntervalMs" : 5000,
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 23
+            "retryIntervalMultiplier" : 1.5
+        }
+    },
+    # hardcoded value
+    "baseDirectory" : "/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB",
+    # merge of reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 6,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-3.1-corda.jar!/reference.conf: 6
+    "dataSourceProperties" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 10
+        "dataSource.password" : "",
+        # merge of reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 8,hardcoded value,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 8,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 17
+        "dataSource.url" : "jdbc:h2:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/persistence;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=10000;WRITE_DELAY=100;AUTO_SERVER_PORT=0",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 9
+        "dataSource.user" : "sa",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 7
+        "dataSourceClassName" : "org.h2.jdbcx.JdbcDataSource"
+    },
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 12
+    "database" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 14
+        "exportHibernateJMXStatistics" : "false",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 13
+        "transactionIsolationLevel" : "REPEATABLE_READ"
+    },
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 16
+    "devMode" : true,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 2
+    "emailAddress" : "admin@company.com",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 3
+    "exportJMXto" : "http",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 17
+    "h2port" : 0,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 4
+    "keyStorePassword" : "cordacadevpass",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 1
+    "myLegalName" : "O=PartyB,L=New York,C=US",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 2
+    "p2pAddress" : "localhost:10010",
+    # merge of /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 3,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 27
+    "rpcSettings" : {
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 4
+        "address" : "localhost:10011",
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 5
+        "adminAddress" : "localhost:10051",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 29
+        "standAloneBroker" : false,
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 28
+        "useSsl" : false
+    },
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 7
+    "rpcUsers" : [
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 8
+        {
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 9
+            "password" : "test",
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 10
+            "permissions" : [
+                # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 11
+                "ALL"
+            ],
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 13
+            "user" : "user1"
+        }
+    ],
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 5
+    "trustStorePassword" : "trustpass",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 18
+    "useTestClock" : false,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 19
+    "verifierType" : "InMemory",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 16
+    "webAddress" : "localhost:10012"
+}
+ {}
+[WARN ] 2019-07-10T10:59:04,692Z [main] internal.config.defaultToOldPath - Config key user has been deprecated and will be removed in a future release. Use username instead {}
+[INFO ] 2019-07-10T10:59:05,313Z [main] internal.Node.logStartupInfo - Vendor: Corda Open Source {}
+[INFO ] 2019-07-10T10:59:05,314Z [main] internal.Node.logStartupInfo - Release: 3.1-corda {}
+[INFO ] 2019-07-10T10:59:05,314Z [main] internal.Node.logStartupInfo - Platform Version: 3 {}
+[INFO ] 2019-07-10T10:59:05,315Z [main] internal.Node.logStartupInfo - Revision: d193dd85e0908aba9b245e40297f4b2073555905 {}
+[INFO ] 2019-07-10T10:59:05,323Z [main] internal.Node.logStartupInfo - PID: 72492 {}
+[INFO ] 2019-07-10T10:59:05,324Z [main] internal.Node.logStartupInfo - Main class: /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-3.1-corda.jar {}
+[INFO ] 2019-07-10T10:59:05,324Z [main] internal.Node.logStartupInfo - CommandLine Args: -Xmx200m -XX:+UseG1GC -javaagent:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/quasar-core-0.7.9-jdk8.jar=x(antlr**;bftsmart**;ch**;co.paralleluniverse**;com.codahale**;com.esotericsoftware**;com.fasterxml**;com.google**;com.ibm**;com.intellij**;com.jcabi**;com.nhaarman**;com.opengamma**;com.typesafe**;com.zaxxer**;de.javakaffee**;groovy**;groovyjarjarantlr**;groovyjarjarasm**;io.atomix**;io.github**;io.netty**;jdk**;joptsimple**;junit**;kotlin**;net.bytebuddy**;net.i2p**;org.apache**;org.assertj**;org.bouncycastle**;org.codehaus**;org.crsh**;org.dom4j**;org.fusesource**;org.h2**;org.hamcrest**;org.hibernate**;org.jboss**;org.jcp**;org.joda**;org.junit**;org.mockito**;org.objectweb**;org.objenesis**;org.slf4j**;org.w3c**;org.xml**;org.yaml**;reflectasm**;rx**;org.jolokia**) -Dvisualvm.display.name=Corda -Djava.library.path=/Users/kprzystalski/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda -Dcapsule.app=net.corda.node.Corda_3.1-corda -Dcapsule.dir=/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda -Dcapsule.jar=/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar {}
+[INFO ] 2019-07-10T10:59:05,325Z [main] internal.Node.logStartupInfo - Application Args: --just-generate-node-info {}
+[ERROR] 2019-07-10T10:59:05,326Z [main] internal.Node.run - Exception during node registration {}
+java.lang.UnsupportedOperationException: Boot class path mechanism is not supported
+	at sun.management.RuntimeImpl.getBootClassPath(RuntimeImpl.java:99) ~[?:?]
+	at net.corda.node.internal.NodeStartup.logStartupInfo(NodeStartup.kt:174) ~[corda-node-3.1-corda.jar:?]
+	at net.corda.node.internal.NodeStartup.run(NodeStartup.kt:106) [corda-node-3.1-corda.jar:?]
+	at net.corda.node.Corda.main(Corda.kt:13) [corda-node-3.1-corda.jar:?]
+[INFO ] 2019-07-10T11:03:05,776Z [main] manifests.Manifests.info - 111 attributes loaded from 124 stream(s) in 3s, 111 saved, 1970 ignored: ["ActiveMQ-Version", "Agent-Class", "Ant-Version", "Application-Class", "Application-Library-Allowable-Codebase", "Application-Name", "Application-Version", "Archiver-Version", "Automatic-Module-Name", "Bnd-LastModified", "Branch", "Build-Date", "Build-Host", "Build-Id", "Build-Java-Version", "Build-Jdk", "Build-Job", "Build-Number", "Build-Timestamp", "Built-By", "Built-OS", "Built-Status", "Bundle-Activator", "Bundle-Category", "Bundle-ClassPath", "Bundle-Copyright", "Bundle-Description", "Bundle-DocURL", "Bundle-License", "Bundle-ManifestVersion", "Bundle-Name", "Bundle-RequiredExecutionEnvironment", "Bundle-SymbolicName", "Bundle-Vendor", "Bundle-Version", "Caller-Allowable-Codebase", "Can-Redefine-Classes", "Can-Retransform-Classes", "Can-Set-Native-Method-Prefix", "Caplets", "Change", "Codebase", "Corda-Platform-Version", "Corda-Release-Version", "Corda-Revision", "Corda-Vendor", "Created-By", "DynamicImport-Package", "Eclipse-BuddyPolicy", "Eclipse-LazyStart", "Export-Package", "Extension-Name", "Fragment-Host", "Gradle-Version", "Ignore-Package", "Implementation-Build", "Implementation-Build-Date", "Implementation-Title", "Implementation-URL", "Implementation-Url", "Implementation-Vendor", "Implementation-Vendor-Id", "Implementation-Version", "Import-Package", "Include-Resource", "JCabi-Build", "JCabi-Date", "JCabi-Version", "JVM-Args", "Java-Agents", "Java-Vendor", "Java-Version", "Kotlin-Runtime-Component", "Kotlin-Version", "Log4jReleaseKey", "Log4jReleaseManager", "Log4jReleaseVersion", "Main-Class", "Main-class", "Manifest-Version", "Min-Java-Version", "Min-Update-Version", "Module-Email", "Module-Origin", "Module-Owner", "Module-Source", "Multi-Release", "Originally-Created-By", "Os-Arch", "Os-Name", "Os-Version", "Package", "Permissions", "Premain-Class", "Private-Package", "Provide-Capability", "Require-Capability", "SCM-Revision", "SCM-url", "Scm-Connection", "Scm-Revision", "Scm-Url", "Service-Component", "Specification-Title", "Specification-Vendor", "Specification-Version", "System-Properties", "Tool", "Trusted-Library", "X-Compile-Source-JDK", "X-Compile-Target-JDK"] {}
+[INFO ] 2019-07-10T11:03:18,322Z [main] BasicInfo.printBasicNodeInfo - Logs can be found in                    : /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/logs {}
+[INFO ] 2019-07-10T11:03:19,925Z [main] config.ConfigHelper.loadConfig - Config:
+{
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 20
+    "activeMQServer" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 21
+        "bridge" : {
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 24
+            "maxRetryIntervalMin" : 3,
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 22
+            "retryIntervalMs" : 5000,
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 23
+            "retryIntervalMultiplier" : 1.5
+        }
+    },
+    # hardcoded value
+    "baseDirectory" : "/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB",
+    # merge of reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 6,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-3.1-corda.jar!/reference.conf: 6
+    "dataSourceProperties" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 10
+        "dataSource.password" : "",
+        # merge of reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 8,hardcoded value,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 8,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 17
+        "dataSource.url" : "jdbc:h2:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/persistence;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=10000;WRITE_DELAY=100;AUTO_SERVER_PORT=0",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 9
+        "dataSource.user" : "sa",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 7
+        "dataSourceClassName" : "org.h2.jdbcx.JdbcDataSource"
+    },
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 12
+    "database" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 14
+        "exportHibernateJMXStatistics" : "false",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 13
+        "transactionIsolationLevel" : "REPEATABLE_READ"
+    },
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 16
+    "devMode" : true,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 2
+    "emailAddress" : "admin@company.com",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 3
+    "exportJMXto" : "http",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 17
+    "h2port" : 0,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 4
+    "keyStorePassword" : "cordacadevpass",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 1
+    "myLegalName" : "O=PartyB,L=New York,C=US",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 2
+    "p2pAddress" : "localhost:10010",
+    # merge of /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 3,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 27
+    "rpcSettings" : {
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 4
+        "address" : "localhost:10011",
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 5
+        "adminAddress" : "localhost:10051",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 29
+        "standAloneBroker" : false,
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 28
+        "useSsl" : false
+    },
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 7
+    "rpcUsers" : [
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 8
+        {
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 9
+            "password" : "test",
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 10
+            "permissions" : [
+                # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 11
+                "ALL"
+            ],
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 13
+            "user" : "user1"
+        }
+    ],
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 5
+    "trustStorePassword" : "trustpass",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 18
+    "useTestClock" : false,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 19
+    "verifierType" : "InMemory",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 16
+    "webAddress" : "localhost:10012"
+}
+ {}
+[WARN ] 2019-07-10T11:03:36,485Z [main] internal.config.defaultToOldPath - Config key user has been deprecated and will be removed in a future release. Use username instead {}
+[INFO ] 2019-07-10T11:03:38,388Z [main] internal.Node.logStartupInfo - Vendor: Corda Open Source {}
+[INFO ] 2019-07-10T11:03:38,388Z [main] internal.Node.logStartupInfo - Release: 3.1-corda {}
+[INFO ] 2019-07-10T11:03:38,389Z [main] internal.Node.logStartupInfo - Platform Version: 3 {}
+[INFO ] 2019-07-10T11:03:38,389Z [main] internal.Node.logStartupInfo - Revision: d193dd85e0908aba9b245e40297f4b2073555905 {}
+[INFO ] 2019-07-10T11:03:38,527Z [main] internal.Node.logStartupInfo - PID: 72556 {}
+[INFO ] 2019-07-10T11:03:38,587Z [main] internal.Node.logStartupInfo - Main class: /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-3.1-corda.jar {}
+[INFO ] 2019-07-10T11:03:38,589Z [main] internal.Node.logStartupInfo - CommandLine Args: -Xmx200m -XX:+UseG1GC -javaagent:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/quasar-core-0.7.9-jdk8.jar=x(antlr**;bftsmart**;ch**;co.paralleluniverse**;com.codahale**;com.esotericsoftware**;com.fasterxml**;com.google**;com.ibm**;com.intellij**;com.jcabi**;com.nhaarman**;com.opengamma**;com.typesafe**;com.zaxxer**;de.javakaffee**;groovy**;groovyjarjarantlr**;groovyjarjarasm**;io.atomix**;io.github**;io.netty**;jdk**;joptsimple**;junit**;kotlin**;net.bytebuddy**;net.i2p**;org.apache**;org.assertj**;org.bouncycastle**;org.codehaus**;org.crsh**;org.dom4j**;org.fusesource**;org.h2**;org.hamcrest**;org.hibernate**;org.jboss**;org.jcp**;org.joda**;org.junit**;org.mockito**;org.objectweb**;org.objenesis**;org.slf4j**;org.w3c**;org.xml**;org.yaml**;reflectasm**;rx**;org.jolokia**) -Dvisualvm.display.name=Corda -Djava.library.path=/Users/kprzystalski/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda -Dcapsule.app=net.corda.node.Corda_3.1-corda -Dcapsule.dir=/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda -Dcapsule.jar=/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar {}
+[INFO ] 2019-07-10T11:03:38,591Z [main] internal.Node.logStartupInfo - Application Args: --just-generate-node-info {}
+[ERROR] 2019-07-10T11:03:38,592Z [main] internal.Node.run - Exception during node registration {}
+java.lang.UnsupportedOperationException: Boot class path mechanism is not supported
+	at sun.management.RuntimeImpl.getBootClassPath(RuntimeImpl.java:99) ~[?:?]
+	at net.corda.node.internal.NodeStartup.logStartupInfo(NodeStartup.kt:174) ~[corda-node-3.1-corda.jar:?]
+	at net.corda.node.internal.NodeStartup.run(NodeStartup.kt:106) [corda-node-3.1-corda.jar:?]
+	at net.corda.node.Corda.main(Corda.kt:13) [corda-node-3.1-corda.jar:?]
+[INFO ] 2019-07-10T11:05:22,011Z [main] manifests.Manifests.info - 111 attributes loaded from 125 stream(s) in 3s, 111 saved, 1973 ignored: ["ActiveMQ-Version", "Agent-Class", "Ant-Version", "Application-Class", "Application-Library-Allowable-Codebase", "Application-Name", "Application-Version", "Archiver-Version", "Automatic-Module-Name", "Bnd-LastModified", "Branch", "Build-Date", "Build-Host", "Build-Id", "Build-Java-Version", "Build-Jdk", "Build-Job", "Build-Number", "Build-Timestamp", "Built-By", "Built-OS", "Built-Status", "Bundle-Activator", "Bundle-Category", "Bundle-ClassPath", "Bundle-Copyright", "Bundle-Description", "Bundle-DocURL", "Bundle-License", "Bundle-ManifestVersion", "Bundle-Name", "Bundle-RequiredExecutionEnvironment", "Bundle-SymbolicName", "Bundle-Vendor", "Bundle-Version", "Caller-Allowable-Codebase", "Can-Redefine-Classes", "Can-Retransform-Classes", "Can-Set-Native-Method-Prefix", "Caplets", "Change", "Codebase", "Corda-Platform-Version", "Corda-Release-Version", "Corda-Revision", "Corda-Vendor", "Created-By", "DynamicImport-Package", "Eclipse-BuddyPolicy", "Eclipse-LazyStart", "Export-Package", "Extension-Name", "Fragment-Host", "Gradle-Version", "Ignore-Package", "Implementation-Build", "Implementation-Build-Date", "Implementation-Title", "Implementation-URL", "Implementation-Url", "Implementation-Vendor", "Implementation-Vendor-Id", "Implementation-Version", "Import-Package", "Include-Resource", "JCabi-Build", "JCabi-Date", "JCabi-Version", "JVM-Args", "Java-Agents", "Java-Vendor", "Java-Version", "Kotlin-Runtime-Component", "Kotlin-Version", "Log4jReleaseKey", "Log4jReleaseManager", "Log4jReleaseVersion", "Main-Class", "Main-class", "Manifest-Version", "Min-Java-Version", "Min-Update-Version", "Module-Email", "Module-Origin", "Module-Owner", "Module-Source", "Multi-Release", "Originally-Created-By", "Os-Arch", "Os-Name", "Os-Version", "Package", "Permissions", "Premain-Class", "Private-Package", "Provide-Capability", "Require-Capability", "SCM-Revision", "SCM-url", "Scm-Connection", "Scm-Revision", "Scm-Url", "Service-Component", "Specification-Title", "Specification-Vendor", "Specification-Version", "System-Properties", "Tool", "Trusted-Library", "X-Compile-Source-JDK", "X-Compile-Target-JDK"] {}
+[INFO ] 2019-07-10T11:05:23,134Z [main] BasicInfo.printBasicNodeInfo - Logs can be found in                    : /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/logs {}
+[INFO ] 2019-07-10T11:05:23,625Z [main] config.ConfigHelper.loadConfig - Config:
+{
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 20
+    "activeMQServer" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 21
+        "bridge" : {
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 24
+            "maxRetryIntervalMin" : 3,
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 22
+            "retryIntervalMs" : 5000,
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 23
+            "retryIntervalMultiplier" : 1.5
+        }
+    },
+    # hardcoded value
+    "baseDirectory" : "/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB",
+    # merge of reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 6,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-3.1-corda.jar!/reference.conf: 6
+    "dataSourceProperties" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 10
+        "dataSource.password" : "",
+        # merge of reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 8,hardcoded value,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 8,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 17
+        "dataSource.url" : "jdbc:h2:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/persistence;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=10000;WRITE_DELAY=100;AUTO_SERVER_PORT=0",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 9
+        "dataSource.user" : "sa",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 7
+        "dataSourceClassName" : "org.h2.jdbcx.JdbcDataSource"
+    },
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 12
+    "database" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 14
+        "exportHibernateJMXStatistics" : "false",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 13
+        "transactionIsolationLevel" : "REPEATABLE_READ"
+    },
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 16
+    "devMode" : true,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 2
+    "emailAddress" : "admin@company.com",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 3
+    "exportJMXto" : "http",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 17
+    "h2port" : 0,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 4
+    "keyStorePassword" : "cordacadevpass",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 1
+    "myLegalName" : "O=PartyB,L=New York,C=US",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 2
+    "p2pAddress" : "localhost:10010",
+    # merge of /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 3,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 27
+    "rpcSettings" : {
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 4
+        "address" : "localhost:10011",
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 5
+        "adminAddress" : "localhost:10051",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 29
+        "standAloneBroker" : false,
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 28
+        "useSsl" : false
+    },
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 7
+    "rpcUsers" : [
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 8
+        {
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 9
+            "password" : "test",
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 10
+            "permissions" : [
+                # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 11
+                "ALL"
+            ],
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 13
+            "user" : "user1"
+        }
+    ],
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 5
+    "trustStorePassword" : "trustpass",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 18
+    "useTestClock" : false,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 19
+    "verifierType" : "InMemory",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 16
+    "webAddress" : "localhost:10012"
+}
+ {}
+[WARN ] 2019-07-10T11:05:27,221Z [main] internal.config.defaultToOldPath - Config key user has been deprecated and will be removed in a future release. Use username instead {}
+[INFO ] 2019-07-10T11:05:27,472Z [main] internal.Node.logStartupInfo - Vendor: Corda Open Source {}
+[INFO ] 2019-07-10T11:05:27,473Z [main] internal.Node.logStartupInfo - Release: 3.1-corda {}
+[INFO ] 2019-07-10T11:05:27,474Z [main] internal.Node.logStartupInfo - Platform Version: 3 {}
+[INFO ] 2019-07-10T11:05:27,474Z [main] internal.Node.logStartupInfo - Revision: d193dd85e0908aba9b245e40297f4b2073555905 {}
+[INFO ] 2019-07-10T11:05:27,477Z [main] internal.Node.logStartupInfo - PID: 72619 {}
+[INFO ] 2019-07-10T11:05:27,477Z [main] internal.Node.logStartupInfo - Main class: /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-3.1-corda.jar {}
+[INFO ] 2019-07-10T11:05:27,478Z [main] internal.Node.logStartupInfo - CommandLine Args: -Xmx200m -XX:+UseG1GC -javaagent:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/quasar-core-0.7.9-jdk8.jar=x(antlr**;bftsmart**;ch**;co.paralleluniverse**;com.codahale**;com.esotericsoftware**;com.fasterxml**;com.google**;com.ibm**;com.intellij**;com.jcabi**;com.nhaarman**;com.opengamma**;com.typesafe**;com.zaxxer**;de.javakaffee**;groovy**;groovyjarjarantlr**;groovyjarjarasm**;io.atomix**;io.github**;io.netty**;jdk**;joptsimple**;junit**;kotlin**;net.bytebuddy**;net.i2p**;org.apache**;org.assertj**;org.bouncycastle**;org.codehaus**;org.crsh**;org.dom4j**;org.fusesource**;org.h2**;org.hamcrest**;org.hibernate**;org.jboss**;org.jcp**;org.joda**;org.junit**;org.mockito**;org.objectweb**;org.objenesis**;org.slf4j**;org.w3c**;org.xml**;org.yaml**;reflectasm**;rx**;org.jolokia**) -Dvisualvm.display.name=Corda -Djava.library.path=/Users/kprzystalski/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda -Dcapsule.app=net.corda.node.Corda_3.1-corda -Dcapsule.dir=/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda -Dcapsule.jar=/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar {}
+[INFO ] 2019-07-10T11:05:27,478Z [main] internal.Node.logStartupInfo - Application Args: --just-generate-node-info {}
+[INFO ] 2019-07-10T11:05:27,479Z [main] internal.Node.logStartupInfo - bootclasspath: /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/classes {}
+[INFO ] 2019-07-10T11:05:27,479Z [main] internal.Node.logStartupInfo - classpath: /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-rpc-3.1-corda.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-api-3.1-corda.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-confidential-identities-3.1-corda.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/cordform-common-3.1.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/log4j-slf4j-impl-2.9.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/log4j-web-2.9.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jul-to-slf4j-1.7.25.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-jackson-3.1-corda.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-core-3.1-corda.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/kotlin-stdlib-jre8-1.1.60.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jackson-module-kotlin-2.9.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/kotlin-reflect-1.1.60.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jimfs-1.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-amqp-protocol-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-server-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-jdbc-store-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-jms-client-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-core-client-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-journal-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-commons-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/guava-21.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jopt-simple-5.0.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/commons-collections4-4.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-core-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-config-ogdl-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/commons-beanutils-1.9.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jansi-1.14.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jcabi-manifests-1.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/forms_rt-7.0.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/json-20180130.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/metrics-core-3.1.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/config-1.3.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/h2-1.4.194.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/postgresql-42.1.4.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/HikariCP-2.5.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/hibernate-java8-5.2.6.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/hibernate-core-5.2.6.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/copycat-client-1.2.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/copycat-server-1.2.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/catalyst-netty-1.1.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/netty-all-4.1.9.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/crash.connectors.ssh-cadb53544fbb3c0fb901445da614998a6a419488.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/crash.shell-cadb53544fbb3c0fb901445da614998a6a419488.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/okhttp-3.5.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/commons-codec-1.10.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/library-master-v1.1-beta-g6215ec8-87.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jolokia-jvm-1.3.7-agent.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/quasar-core-0.7.9-jdk8.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/commons-fileupload-1.3.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/kryo-serializers-0.41.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/kryo-4.0.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/proton-j-0.21.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/fast-classpath-scanner-2.12.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jsr305-3.0.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jcabi-log-0.14.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/copycat-protocol-1.2.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/catalyst-transport-1.1.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/mina-core-2.0.16.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-cache-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-crypto-hash-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-crypto-cipher-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-config-core-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-event-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-crypto-core-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-lang-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jcl-over-slf4j-1.7.25.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/catalyst-concurrent-1.1.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/catalyst-serializer-1.1.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/catalyst-buffer-1.1.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/catalyst-common-1.1.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/sshd-pam-0.11.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/sshd-core-1.6.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/slf4j-api-1.7.25.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/log4j-core-2.9.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/log4j-api-2.9.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/kotlin-stdlib-jre7-1.1.60.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/kotlin-stdlib-1.1.60.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/commons-collections-3.2.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/hibernate-commons-annotations-5.0.1.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-native-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jboss-logging-3.3.0.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-selector-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jgroups-3.6.13.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/geronimo-json_1.0_spec-1.0-alpha-1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/johnzon-core-0.9.5.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/forms-1.1-preview.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jdom-1.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jackson-dataformat-yaml-2.9.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jackson-datatype-jsr310-2.9.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/hibernate-jpa-2.1-api-1.0.0.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/javassist-3.20.0-GA.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/antlr-2.7.7.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/geronimo-jta_1.1_spec-1.1.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jandex-2.0.3.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/classmate-1.3.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/dom4j-1.6.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/cdi-api-1.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/crash.cli-cadb53544fbb3c0fb901445da614998a6a419488.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/groovy-all-1.8.9.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/okio-1.11.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jolokia-core-1.3.7.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/json-simple-1.1.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/rxjava-1.2.4.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/commons-jexl3-3.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jackson-databind-2.9.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/eddsa-0.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/bcpkix-jdk15on-1.57.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/bcprov-jdk15on-1.57.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/commons-io-2.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/reflectasm-1.11.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/minlog-1.3.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/objenesis-2.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/annotations-13.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jackson-annotations-2.9.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/snakeyaml-1.18.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jackson-core-2.9.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/el-api-2.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jsr250-api-1.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/javax.inject-1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jpam-1.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/geronimo-jms_2.0_spec-1.0-alpha-2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/asm-5.0.4.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-3.1-corda.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/quasar-core-0.7.9-jdk8.jar {}
+[INFO ] 2019-07-10T11:05:27,482Z [main] internal.Node.logStartupInfo - VM Java HotSpot(TM) 64-Bit Server VM Oracle Corporation 25.131-b11 {}
+[INFO ] 2019-07-10T11:05:27,482Z [main] internal.Node.logStartupInfo - Machine: DE-20J7PF13STVJ.codete {}
+[INFO ] 2019-07-10T11:05:27,482Z [main] internal.Node.logStartupInfo - Working Directory: /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB {}
+[INFO ] 2019-07-10T11:05:27,483Z [main] internal.Node.logStartupInfo - Starting as node on localhost:10010 {}
+[INFO ] 2019-07-10T11:05:28,046Z [main] cordapp.CordappLoader.<init> - No CorDapp paths provided {}
+[INFO ] 2019-07-10T11:05:28,933Z [main] internal.Node.generateAndSaveNodeInfo - Generating nodeInfo ... {}
+[WARN ] 2019-07-10T11:05:28,934Z [main] internal.Node.initCertificate - Corda node is running in dev mode. {}
+[INFO ] 2019-07-10T11:05:32,200Z [main] internal.Node.obtainIdentity - identity-private-key not found in key store /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/certificates/nodekeystore.jks, generating fresh key! {}
+[INFO ] 2019-07-10T11:05:33,746Z [main] BasicInfo.printBasicNodeInfo - Database connection url is              : jdbc:h2:tcp://10.1.1.131:57031/node {}
+[INFO ] 2019-07-10T11:05:34,095Z [main] hikari.HikariDataSource.<init> - HikariPool-1 - Started. {}
+[INFO ] 2019-07-10T11:05:34,611Z [main] internal.Node.invoke - Connected to H2 database. {}
+[INFO ] 2019-07-10T11:05:34,869Z [main] persistence.HibernateConfiguration.<init> - Init HibernateConfiguration for schemas: [CommonSchemaV1(name=net.corda.core.schemas.CommonSchema, version=1), VaultSchemaV1(name=net.corda.node.services.vault.VaultSchema, version=1), NodeInfoSchemaV1(name=net.corda.node.internal.schemas.NodeInfoSchema, version=1), NodeCoreV1(name=net.corda.node.services.schema.NodeSchemaService$NodeCore, version=1)] {}
+[INFO ] 2019-07-10T11:05:34,871Z [main] persistence.HibernateConfiguration.makeSessionFactoryForSchemas - Creating session factory for schemas: [CommonSchemaV1(name=net.corda.core.schemas.CommonSchema, version=1), VaultSchemaV1(name=net.corda.node.services.vault.VaultSchema, version=1), NodeInfoSchemaV1(name=net.corda.node.internal.schemas.NodeInfoSchema, version=1), NodeCoreV1(name=net.corda.node.services.schema.NodeSchemaService$NodeCore, version=1)] {}
+[INFO ] 2019-07-10T11:05:35,474Z [main] hibernate.Version.logVersion - HHH000412: Hibernate Core {5.2.6.Final} {}
+[INFO ] 2019-07-10T11:05:35,477Z [main] cfg.Environment.<clinit> - HHH000206: hibernate.properties not found {}
+[INFO ] 2019-07-10T11:05:35,642Z [main] common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final} {}
+[INFO ] 2019-07-10T11:05:36,142Z [main] internal.ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.nodeapi.internal.persistence.HibernateConfiguration$NodeDatabaseConnectionProvider {}
+[INFO ] 2019-07-10T11:05:36,228Z [main] dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect {}
+[INFO ] 2019-07-10T11:05:36,541Z [main] type.BasicTypeRegistry.register - HHH000270: Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@e280403 {}
+[INFO ] 2019-07-10T11:05:41,144Z [main] connections.access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@74697863] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode. {}
+[INFO ] 2019-07-10T11:05:41,590Z [main] persistence.HibernateConfiguration.makeSessionFactoryForSchemas - Created session factory for schemas: [CommonSchemaV1(name=net.corda.core.schemas.CommonSchema, version=1), VaultSchemaV1(name=net.corda.node.services.vault.VaultSchema, version=1), NodeInfoSchemaV1(name=net.corda.node.internal.schemas.NodeInfoSchema, version=1), NodeCoreV1(name=net.corda.node.services.schema.NodeSchemaService$NodeCore, version=1)] {}
+[INFO ] 2019-07-10T11:05:42,352Z [main] internal.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory {}
+[INFO ] 2019-07-10T11:05:42,871Z [main] internal.Node.updateNodeInfo - Node-info has changed so submitting update. Old node-info was null {}
+[INFO ] 2019-07-10T11:05:42,871Z [main] network.PersistentNetworkMapCache.addNode - Adding node with info: NodeInfo(addresses=[localhost:10010], legalIdentitiesAndCerts=[O=PartyB, L=New York, C=US], platformVersion=3, serial=1562756742871) {}
+[INFO ] 2019-07-10T11:05:43,000Z [main] network.PersistentNetworkMapCache.addNode - No previous node found {}
+[INFO ] 2019-07-10T11:05:44,617Z [main] network.PersistentNetworkMapCache.addNode - Done adding node with info: NodeInfo(addresses=[localhost:10010], legalIdentitiesAndCerts=[O=PartyB, L=New York, C=US], platformVersion=3, serial=1562756742871) {}
+[INFO ] 2019-07-10T11:05:44,618Z [main] internal.Node.updateNodeInfo - New node-info: NodeInfo(addresses=[localhost:10010], legalIdentitiesAndCerts=[O=PartyB, L=New York, C=US], platformVersion=3, serial=1562756742871) {}
+[INFO ] 2019-07-10T11:05:45,389Z [main] internal.Node.run - Node exiting successfully {}
+[INFO ] 2019-07-10T12:20:55,095Z [main] manifests.Manifests.info - 111 attributes loaded from 127 stream(s) in 6s, 111 saved, 1980 ignored: ["ActiveMQ-Version", "Agent-Class", "Ant-Version", "Application-Class", "Application-Library-Allowable-Codebase", "Application-Name", "Application-Version", "Archiver-Version", "Automatic-Module-Name", "Bnd-LastModified", "Branch", "Build-Date", "Build-Host", "Build-Id", "Build-Java-Version", "Build-Jdk", "Build-Job", "Build-Number", "Build-Timestamp", "Built-By", "Built-OS", "Built-Status", "Bundle-Activator", "Bundle-Category", "Bundle-ClassPath", "Bundle-Copyright", "Bundle-Description", "Bundle-DocURL", "Bundle-License", "Bundle-ManifestVersion", "Bundle-Name", "Bundle-RequiredExecutionEnvironment", "Bundle-SymbolicName", "Bundle-Vendor", "Bundle-Version", "Caller-Allowable-Codebase", "Can-Redefine-Classes", "Can-Retransform-Classes", "Can-Set-Native-Method-Prefix", "Caplets", "Change", "Codebase", "Corda-Platform-Version", "Corda-Release-Version", "Corda-Revision", "Corda-Vendor", "Created-By", "DynamicImport-Package", "Eclipse-BuddyPolicy", "Eclipse-LazyStart", "Export-Package", "Extension-Name", "Fragment-Host", "Gradle-Version", "Ignore-Package", "Implementation-Build", "Implementation-Build-Date", "Implementation-Title", "Implementation-URL", "Implementation-Url", "Implementation-Vendor", "Implementation-Vendor-Id", "Implementation-Version", "Import-Package", "Include-Resource", "JCabi-Build", "JCabi-Date", "JCabi-Version", "JVM-Args", "Java-Agents", "Java-Vendor", "Java-Version", "Kotlin-Runtime-Component", "Kotlin-Version", "Log4jReleaseKey", "Log4jReleaseManager", "Log4jReleaseVersion", "Main-Class", "Main-class", "Manifest-Version", "Min-Java-Version", "Min-Update-Version", "Module-Email", "Module-Origin", "Module-Owner", "Module-Source", "Multi-Release", "Originally-Created-By", "Os-Arch", "Os-Name", "Os-Version", "Package", "Permissions", "Premain-Class", "Private-Package", "Provide-Capability", "Require-Capability", "SCM-Revision", "SCM-url", "Scm-Connection", "Scm-Revision", "Scm-Url", "Service-Component", "Specification-Title", "Specification-Vendor", "Specification-Version", "System-Properties", "Tool", "Trusted-Library", "X-Compile-Source-JDK", "X-Compile-Target-JDK"] {}
+[INFO ] 2019-07-10T12:20:57,547Z [main] BasicInfo.printBasicNodeInfo - Logs can be found in                    : /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/logs {}
+[INFO ] 2019-07-10T12:20:58,303Z [main] config.ConfigHelper.loadConfig - Config:
+{
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 20
+    "activeMQServer" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 21
+        "bridge" : {
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 24
+            "maxRetryIntervalMin" : 3,
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 22
+            "retryIntervalMs" : 5000,
+            # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 23
+            "retryIntervalMultiplier" : 1.5
+        }
+    },
+    # hardcoded value
+    "baseDirectory" : "/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB",
+    # merge of reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 6,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-3.1-corda.jar!/reference.conf: 6
+    "dataSourceProperties" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 10
+        "dataSource.password" : "",
+        # merge of reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 8,hardcoded value,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 8,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 17
+        "dataSource.url" : "jdbc:h2:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/persistence;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=10000;WRITE_DELAY=100;AUTO_SERVER_PORT=0",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 9
+        "dataSource.user" : "sa",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 7
+        "dataSourceClassName" : "org.h2.jdbcx.JdbcDataSource"
+    },
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 12
+    "database" : {
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 14
+        "exportHibernateJMXStatistics" : "false",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 13
+        "transactionIsolationLevel" : "REPEATABLE_READ"
+    },
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 16
+    "devMode" : true,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 2
+    "emailAddress" : "admin@company.com",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 3
+    "exportJMXto" : "http",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 17
+    "h2port" : 0,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 4
+    "keyStorePassword" : "cordacadevpass",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 1
+    "myLegalName" : "O=PartyB,L=New York,C=US",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 2
+    "p2pAddress" : "localhost:10010",
+    # merge of /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 3,reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 27
+    "rpcSettings" : {
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 4
+        "address" : "localhost:10011",
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 5
+        "adminAddress" : "localhost:10051",
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 29
+        "standAloneBroker" : false,
+        # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 28
+        "useSsl" : false
+    },
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 7
+    "rpcUsers" : [
+        # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 8
+        {
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 9
+            "password" : "test",
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 10
+            "permissions" : [
+                # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 11
+                "ALL"
+            ],
+            # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 13
+            "user" : "user1"
+        }
+    ],
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 5
+    "trustStorePassword" : "trustpass",
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 18
+    "useTestClock" : false,
+    # reference.conf @ jar:file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar!/reference.conf: 19
+    "verifierType" : "InMemory",
+    # /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/node.conf: 16
+    "webAddress" : "localhost:10012"
+}
+ {}
+[WARN ] 2019-07-10T12:21:03,516Z [main] internal.config.defaultToOldPath - Config key user has been deprecated and will be removed in a future release. Use username instead {}
+[INFO ] 2019-07-10T12:21:04,390Z [main] internal.Node.logStartupInfo - Vendor: Corda Open Source {}
+[INFO ] 2019-07-10T12:21:04,391Z [main] internal.Node.logStartupInfo - Release: 3.1-corda {}
+[INFO ] 2019-07-10T12:21:04,391Z [main] internal.Node.logStartupInfo - Platform Version: 3 {}
+[INFO ] 2019-07-10T12:21:04,391Z [main] internal.Node.logStartupInfo - Revision: d193dd85e0908aba9b245e40297f4b2073555905 {}
+[INFO ] 2019-07-10T12:21:04,394Z [main] internal.Node.logStartupInfo - PID: 72955 {}
+[INFO ] 2019-07-10T12:21:04,395Z [main] internal.Node.logStartupInfo - Main class: /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-3.1-corda.jar {}
+[INFO ] 2019-07-10T12:21:04,395Z [main] internal.Node.logStartupInfo - CommandLine Args: -Xmx200m -XX:+UseG1GC -javaagent:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/quasar-core-0.7.9-jdk8.jar=x(antlr**;bftsmart**;ch**;co.paralleluniverse**;com.codahale**;com.esotericsoftware**;com.fasterxml**;com.google**;com.ibm**;com.intellij**;com.jcabi**;com.nhaarman**;com.opengamma**;com.typesafe**;com.zaxxer**;de.javakaffee**;groovy**;groovyjarjarantlr**;groovyjarjarasm**;io.atomix**;io.github**;io.netty**;jdk**;joptsimple**;junit**;kotlin**;net.bytebuddy**;net.i2p**;org.apache**;org.assertj**;org.bouncycastle**;org.codehaus**;org.crsh**;org.dom4j**;org.fusesource**;org.h2**;org.hamcrest**;org.hibernate**;org.jboss**;org.jcp**;org.joda**;org.junit**;org.mockito**;org.objectweb**;org.objenesis**;org.slf4j**;org.w3c**;org.xml**;org.yaml**;reflectasm**;rx**;org.jolokia**) -Dvisualvm.display.name=Corda -Djava.library.path=/Users/kprzystalski/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda -Dcapsule.app=net.corda.node.Corda_3.1-corda -Dcapsule.dir=/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda -Dcapsule.jar=/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar {}
+[INFO ] 2019-07-10T12:21:04,396Z [main] internal.Node.logStartupInfo - Application Args: --just-generate-node-info {}
+[INFO ] 2019-07-10T12:21:04,396Z [main] internal.Node.logStartupInfo - bootclasspath: /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/classes {}
+[INFO ] 2019-07-10T12:21:04,398Z [main] internal.Node.logStartupInfo - classpath: /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/corda.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-rpc-3.1-corda.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-api-3.1-corda.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-confidential-identities-3.1-corda.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/cordform-common-3.1.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/log4j-slf4j-impl-2.9.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/log4j-web-2.9.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jul-to-slf4j-1.7.25.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-jackson-3.1-corda.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-core-3.1-corda.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/kotlin-stdlib-jre8-1.1.60.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jackson-module-kotlin-2.9.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/kotlin-reflect-1.1.60.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jimfs-1.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-amqp-protocol-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-server-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-jdbc-store-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-jms-client-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-core-client-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-journal-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-commons-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/guava-21.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jopt-simple-5.0.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/commons-collections4-4.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-core-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-config-ogdl-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/commons-beanutils-1.9.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jansi-1.14.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jcabi-manifests-1.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/forms_rt-7.0.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/json-20180130.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/metrics-core-3.1.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/config-1.3.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/h2-1.4.194.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/postgresql-42.1.4.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/HikariCP-2.5.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/hibernate-java8-5.2.6.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/hibernate-core-5.2.6.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/copycat-client-1.2.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/copycat-server-1.2.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/catalyst-netty-1.1.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/netty-all-4.1.9.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/crash.connectors.ssh-cadb53544fbb3c0fb901445da614998a6a419488.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/crash.shell-cadb53544fbb3c0fb901445da614998a6a419488.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/okhttp-3.5.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/commons-codec-1.10.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/library-master-v1.1-beta-g6215ec8-87.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jolokia-jvm-1.3.7-agent.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/quasar-core-0.7.9-jdk8.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/commons-fileupload-1.3.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/kryo-serializers-0.41.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/kryo-4.0.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/proton-j-0.21.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/fast-classpath-scanner-2.12.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jsr305-3.0.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jcabi-log-0.14.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/copycat-protocol-1.2.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/catalyst-transport-1.1.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/mina-core-2.0.16.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-cache-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-crypto-hash-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-crypto-cipher-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-config-core-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-event-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-crypto-core-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/shiro-lang-1.4.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jcl-over-slf4j-1.7.25.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/catalyst-concurrent-1.1.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/catalyst-serializer-1.1.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/catalyst-buffer-1.1.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/catalyst-common-1.1.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/sshd-pam-0.11.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/sshd-core-1.6.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/slf4j-api-1.7.25.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/log4j-core-2.9.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/log4j-api-2.9.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/kotlin-stdlib-jre7-1.1.60.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/kotlin-stdlib-1.1.60.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/commons-collections-3.2.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/hibernate-commons-annotations-5.0.1.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-native-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jboss-logging-3.3.0.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/artemis-selector-2.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jgroups-3.6.13.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/geronimo-json_1.0_spec-1.0-alpha-1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/johnzon-core-0.9.5.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/forms-1.1-preview.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jdom-1.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jackson-dataformat-yaml-2.9.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jackson-datatype-jsr310-2.9.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/hibernate-jpa-2.1-api-1.0.0.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/javassist-3.20.0-GA.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/antlr-2.7.7.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/geronimo-jta_1.1_spec-1.1.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jandex-2.0.3.Final.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/classmate-1.3.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/dom4j-1.6.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/cdi-api-1.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/crash.cli-cadb53544fbb3c0fb901445da614998a6a419488.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/groovy-all-1.8.9.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/okio-1.11.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jolokia-core-1.3.7.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/json-simple-1.1.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/rxjava-1.2.4.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/commons-jexl3-3.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jackson-databind-2.9.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/eddsa-0.2.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/bcpkix-jdk15on-1.57.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/bcprov-jdk15on-1.57.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/commons-io-2.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/reflectasm-1.11.3.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/minlog-1.3.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/objenesis-2.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/annotations-13.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jackson-annotations-2.9.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/snakeyaml-1.18.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jackson-core-2.9.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/el-api-2.2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jsr250-api-1.0.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/javax.inject-1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/jpam-1.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/geronimo-jms_2.0_spec-1.0-alpha-2.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/asm-5.0.4.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/corda-node-3.1-corda.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/cordapps/corda-finance-3.1-corda.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/cordapps/cordapp-trading-0.1.jar:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/.cache/apps/net.corda.node.Corda_3.1-corda/quasar-core-0.7.9-jdk8.jar {}
+[INFO ] 2019-07-10T12:21:04,402Z [main] internal.Node.logStartupInfo - VM Java HotSpot(TM) 64-Bit Server VM Oracle Corporation 25.131-b11 {}
+[INFO ] 2019-07-10T12:21:04,403Z [main] internal.Node.logStartupInfo - Machine: DE-20J7PF13STVJ.codete {}
+[INFO ] 2019-07-10T12:21:04,403Z [main] internal.Node.logStartupInfo - Working Directory: /Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB {}
+[INFO ] 2019-07-10T12:21:04,406Z [main] internal.Node.logStartupInfo - Starting as node on localhost:10010 {}
+[INFO ] 2019-07-10T12:21:05,680Z [main] cordapp.CordappLoader.<init> - Loading CorDapps from file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/cordapps/corda-finance-3.1-corda.jar, file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/cordapps/cordapp-trading-0.1.jar {}
+[INFO ] 2019-07-10T12:21:06,057Z [main] cordapp.CordappLoader.scanCordapp - Scanning CorDapp in file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/cordapps/corda-finance-3.1-corda.jar {}
+[INFO ] 2019-07-10T12:21:07,049Z [main] cordapp.CordappLoader.scanCordapp - Scanning CorDapp in file:/Users/kprzystalski/Codete/dlt/corda/cordapp-trading/kotlin-source/build/nodes/PartyB/cordapps/cordapp-trading-0.1.jar {}
+[INFO ] 2019-07-10T12:21:08,122Z [main] internal.Node.generateAndSaveNodeInfo - Generating nodeInfo ... {}
+[WARN ] 2019-07-10T12:21:08,122Z [main] internal.Node.initCertificate - Corda node is running in dev mode. {}
+[INFO ] 2019-07-10T12:21:12,016Z [main] BasicInfo.printBasicNodeInfo - Database connection url is              : jdbc:h2:tcp://10.1.1.131:57368/node {}
+[INFO ] 2019-07-10T12:21:12,629Z [main] hikari.HikariDataSource.<init> - HikariPool-1 - Started. {}
+[INFO ] 2019-07-10T12:21:13,331Z [main] internal.Node.invoke - Connected to H2 database. {}
+[INFO ] 2019-07-10T12:21:13,623Z [main] persistence.HibernateConfiguration.<init> - Init HibernateConfiguration for schemas: [CommonSchemaV1(name=net.corda.core.schemas.CommonSchema, version=1), VaultSchemaV1(name=net.corda.node.services.vault.VaultSchema, version=1), NodeInfoSchemaV1(name=net.corda.node.internal.schemas.NodeInfoSchema, version=1), NodeCoreV1(name=net.corda.node.services.schema.NodeSchemaService$NodeCore, version=1), CashSchemaV1(name=net.corda.finance.schemas.CashSchema, version=1), CommercialPaperSchemaV1(name=net.corda.finance.schemas.CommercialPaperSchema, version=1), TradeSchemaV1(name=com.trading.schema.TradeSchema, version=1)] {}
+[INFO ] 2019-07-10T12:21:13,625Z [main] persistence.HibernateConfiguration.makeSessionFactoryForSchemas - Creating session factory for schemas: [CommonSchemaV1(name=net.corda.core.schemas.CommonSchema, version=1), VaultSchemaV1(name=net.corda.node.services.vault.VaultSchema, version=1), NodeInfoSchemaV1(name=net.corda.node.internal.schemas.NodeInfoSchema, version=1), NodeCoreV1(name=net.corda.node.services.schema.NodeSchemaService$NodeCore, version=1), CashSchemaV1(name=net.corda.finance.schemas.CashSchema, version=1), CommercialPaperSchemaV1(name=net.corda.finance.schemas.CommercialPaperSchema, version=1), TradeSchemaV1(name=com.trading.schema.TradeSchema, version=1)] {}
+[INFO ] 2019-07-10T12:21:14,557Z [main] hibernate.Version.logVersion - HHH000412: Hibernate Core {5.2.6.Final} {}
+[INFO ] 2019-07-10T12:21:14,562Z [main] cfg.Environment.<clinit> - HHH000206: hibernate.properties not found {}
+[INFO ] 2019-07-10T12:21:15,512Z [main] common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final} {}
+[INFO ] 2019-07-10T12:21:16,502Z [main] internal.ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.nodeapi.internal.persistence.HibernateConfiguration$NodeDatabaseConnectionProvider {}
+[INFO ] 2019-07-10T12:21:16,600Z [main] dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect {}
+[INFO ] 2019-07-10T12:21:17,164Z [main] type.BasicTypeRegistry.register - HHH000270: Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1b13467c {}
+[INFO ] 2019-07-10T12:21:25,037Z [main] connections.access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e495414] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode. {}
+[INFO ] 2019-07-10T12:21:26,252Z [main] persistence.HibernateConfiguration.makeSessionFactoryForSchemas - Created session factory for schemas: [CommonSchemaV1(name=net.corda.core.schemas.CommonSchema, version=1), VaultSchemaV1(name=net.corda.node.services.vault.VaultSchema, version=1), NodeInfoSchemaV1(name=net.corda.node.internal.schemas.NodeInfoSchema, version=1), NodeCoreV1(name=net.corda.node.services.schema.NodeSchemaService$NodeCore, version=1), CashSchemaV1(name=net.corda.finance.schemas.CashSchema, version=1), CommercialPaperSchemaV1(name=net.corda.finance.schemas.CommercialPaperSchema, version=1), TradeSchemaV1(name=com.trading.schema.TradeSchema, version=1)] {}
+[INFO ] 2019-07-10T12:21:27,474Z [main] internal.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory {}
+[INFO ] 2019-07-10T12:21:28,430Z [main] internal.Node.updateNodeInfo - Node-info has changed so submitting update. Old node-info was null {}
+[INFO ] 2019-07-10T12:21:28,432Z [main] network.PersistentNetworkMapCache.addNode - Adding node with info: NodeInfo(addresses=[localhost:10010], legalIdentitiesAndCerts=[O=PartyB, L=New York, C=US], platformVersion=3, serial=1562761288431) {}
+[INFO ] 2019-07-10T12:21:28,576Z [main] network.PersistentNetworkMapCache.addNode - No previous node found {}
+[INFO ] 2019-07-10T12:21:31,105Z [main] network.PersistentNetworkMapCache.addNode - Done adding node with info: NodeInfo(addresses=[localhost:10010], legalIdentitiesAndCerts=[O=PartyB, L=New York, C=US], platformVersion=3, serial=1562761288431) {}
+[INFO ] 2019-07-10T12:21:31,106Z [main] internal.Node.updateNodeInfo - New node-info: NodeInfo(addresses=[localhost:10010], legalIdentitiesAndCerts=[O=PartyB, L=New York, C=US], platformVersion=3, serial=1562761288431) {}
+[INFO ] 2019-07-10T12:21:32,498Z [main] internal.Node.run - Node exiting successfully {}

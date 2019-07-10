@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Premain-Class: org.jolokia.jvmagent.JvmAgent
+Archiver-Version: Plexus Archiver
+Built-By: roland
+Agent-Class: org.jolokia.jvmagent.JvmAgent
+Can-Redefine-Classes: false
+Can-Retransform-Classes: false
+Can-Set-Native-Method-Prefix: false
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_40
+Main-Class: org.jolokia.jvmagent.client.AgentLauncher
+
